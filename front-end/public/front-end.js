@@ -50,11 +50,23 @@ promptButton.addEventListener("click", async function () {
       promptButton.textContent = "Results!!";
       step++;
     }, 5000);
+  } else if (step === 4) {
+    fetch("http://127.0.0.1:5000/image", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        r1: values[0],
+        r2: values[1],
+        r3: values[2],
+      }),
+    });
   }
 });
 
 const fetchPy = function () {
-  fetch("192.168.55.255:5000/position")
+  fetch("http://127.0.0.1:5000/position")
     .then((response) => {
       if (response.status >= 400) {
         throw new Error("Network response was not ok");
