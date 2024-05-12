@@ -16,16 +16,32 @@
         />
     </head>
     <body>
-        <header><h1>Test</h1></header>
+        <div class="prompt-bg"></div>
+        <header>
+            <img class="logo" src="/Net Finder (500 x 200 px).svg" />
+        </header>
         <main>
             <h2><span>Track</span> access point</h2>
-            <div>
+            <div class="button-div">
                 <button class="start-python">
                     <ion-icon
                         name="wifi-outline"
                         class="icon wifi-icon"
                     ></ion-icon>
                 </button>
+            </div>
+            <div class="action-prompt">
+                <div class="prompt-container">
+                    <h3 class="prompt-header">Move to the first spot</h3>
+                    <!-- <img /> -->
+                    <p class="prompt-paragraph">
+                        Move to the first spot. We recommend placing the testing
+                        points at least 3 meters apart from each other.
+                    </p>
+                    <div class="flex-container">
+                        <button class="prompt-button">I'm ready!</button>
+                    </div>
+                </div>
             </div>
         </main>
         <script src="/front-end.js"></script>
