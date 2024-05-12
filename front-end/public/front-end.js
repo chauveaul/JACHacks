@@ -7,6 +7,7 @@ const promptSection = document.querySelector(".action-prompt");
 const promptHeader = document.querySelector(".prompt-header");
 const promptParagraph = document.querySelector(".prompt-paragraph");
 const promptButton = document.querySelector(".prompt-button");
+const promptContainer = document.querySelector(".prompt-container");
 
 let step = 0;
 
@@ -97,7 +98,8 @@ promptButton.addEventListener("click", async function () {
         r3: values[2].position,
       }),
     });
-    promptParagraph.innerHTML= "<img src='/yippee.png'/>"
+
+    promptContainer.innerHTML= "<img src='/yippee.png'/>"
   }
 });
 
