@@ -1,6 +1,6 @@
 "use strict";
 
-fetch("192.168.55.255:5000/position")
+fetch("http://127.0.0.1:5000/position")
   .then((response) => {
     if (response.status >= 400) {
       throw new Error("Network response was not ok");

@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "..", "index.html"));
 });
 
-app.get("./192.168.55.92:5000/position", function (req, res) {
+app.get("/http://127.0.0.1:5000/position", function (req, res) {
   const response = res;
   console.log(response);
 });
