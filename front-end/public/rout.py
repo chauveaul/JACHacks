@@ -1,9 +1,7 @@
 import subprocess
-from turtle import position
 from rssi import RSSI_Localizer
 import math
 import time
-import sys
 
 
 # def position3():
